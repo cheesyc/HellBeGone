@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "Hell be gone",
+    "description": "Sense Worden is a chump, here's something to help him",
+    "version": "0.25",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
